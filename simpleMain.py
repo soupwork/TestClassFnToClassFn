@@ -7,7 +7,7 @@
     
 """
 
-from simpleClass import SimpleClass
+from SecondClass import SecondClass
  
 class MainClass:   
 
@@ -20,23 +20,22 @@ class MainClass:
         print("this is the test function in main")
         
     def testToTestClass(self):
-        print("begin: calling test function in simple Class")
-        SimpleClass.testfn(simpleObj) #this call works
-        print("end: calling test function in simple Class")
+        print("begin: calling test function in second Class")
+        SecondClass.testfn(secondObj) #
+        print("end: calling test function in second Class")
 # end MaineClass   
     
 
 if __name__=="__main__":
     """This is my main program.  """
-    maine=__name__
+    maine="testname"
     print("the name of main in simpleMain is ", maine)
     mainObj=MainClass(maine)
-     
-    simpleObj=SimpleClass()
-
+    secondObj=SecondClass()
+    print("check dir")
+    print(dir())
+    print("check second class object")
+    print(dir(secondObj))
     mainObj.testToTestClass()
-    print("\n", MainClass.__dict__, "\n ")
-    print(mainObj.__dict__,"\n ")
-    print(SimpleClass.__dict__,"\n ")
-    print(simpleObj.__dict__)
-    simpleObj.checkmain()
+    
+    secondObj.checkmain()
