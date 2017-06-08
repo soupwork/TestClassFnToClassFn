@@ -1,0 +1,12 @@
+If "namespaces are one honking great idea", you would think they would be easier to understand, document, and troubleshoot.
+
+Reading other people’s code is hard. I’ll try to keep it short. I think I have a problem with namespaces, import statements, and passing objects between classes.
+
+I am trying to call a function in an instantiated class from a function in another instantiated class.
+
+I’ve reduced my code to the bare minimum to try to make it a little easier.
+
+Originally, I was trying to call a function in main *from* a method in an instantiated object.
+It didn't work. I tried for a couple weeks to find a way with no luck. My workaround was to make a new class and try to call the function in the class. It isn't working for me either. I am sure I am not understanding something basic.
+
+I don't think what I'm trying to do should be unusual or difficult. There must be some OOP concepts that I am not understanding. I am sure I am getting closer. I'm looking for some understanding, not a fix.
